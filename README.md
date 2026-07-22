@@ -11,6 +11,7 @@ The entire site is a single self-contained file: **`index.html`** (all styling, 
 | File | Purpose |
 |------|---------|
 | `index.html` | The complete website. |
+| `og-image.png` | Social-share preview card (shown when the link is posted on LinkedIn, etc.). Keep it in the repo root so `biotecmaven.com/og-image.png` resolves. |
 | `CNAME` | Tells GitHub Pages to serve the site at `biotecmaven.com`. |
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is (skip Jekyll processing). |
 | `README.md` | This file. |
