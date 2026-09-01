@@ -2,7 +2,7 @@
 
 The website for BiotecMaven — strategic biologics & computational biology consulting by Dr. Vibha Chauhan.
 
-The entire site is a single self-contained file: **`index.html`** (all styling, scripts, and the headshot are embedded, so there are no other assets to manage).
+The site is a lightweight static page: **`index.html`** contains the layout, styling, and scripts, with the founder portrait served from **`assets/vibha-chauhan.jpg`**.
 
 ---
 
@@ -78,4 +78,4 @@ Either way, once the records point at GitHub, the Wix site stops serving and thi
 
 ## Making edits later
 
-Open `index.html`, change the text or styling, and commit the updated file back to the repo — GitHub Pages redeploys automatically within a minute. The headshot is embedded as a base64 image inside the file; to swap it, replace the `data:image/jpeg;base64,...` string in the `<img>` inside the "Meet the Expert" section.
+Open `index.html`, change the text or styling, and commit the updated file back to the repo — GitHub Pages redeploys automatically within a minute. To swap the founder portrait, replace `assets/vibha-chauhan.jpg` and keep the image path in the "Meet the Expert" section.
