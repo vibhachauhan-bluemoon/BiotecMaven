@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request | BiotecMaven</title>
+  <meta name="description" content="Request a defined BiotecMaven review from a public name and a nonconfidential question, or start an advisory conversation with a nonconfidential summary." />
+  <meta name="robots" content="noindex" />
+  <meta property="og:site_name" content="BiotecMaven" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Request | BiotecMaven" />
+  <meta property="og:description" content="Send a nonconfidential question or a short project summary. Nothing is charged when you send it." />
+  <meta property="og:url" content="https://biotecmaven.com/request.html" />
+  <meta property="og:image" content="https://biotecmaven.com/assets/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="BiotecMaven — from scientific question to clear next step." />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://biotecmaven.com/assets/og-cover.png" />
+  <meta name="theme-color" content="#08243f" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/tokens.css" />
+<style>
+    :root{--navy:#08243f;--navy-2:#0d3658;--ink:#102235;--teal:#0e8f86;--warm-line:#e8dfd2;--teal-bright:#26b8a9;--mint:#e8f5f2;--paper:#faf7f2;--muted:#526579;--line:#dce6ec;--white:#fff;--max:1160px;--shadow:0 18px 50px -24px rgba(8,36,63,.36)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}body{margin:0;color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:16px;line-height:1.65;background:var(--white);-webkit-font-smoothing:antialiased}h1,h2,h3{margin:0;color:var(--navy);line-height:1.1;letter-spacing:-.035em}h1{font-size:clamp(2.55rem,6vw,5.2rem);max-width:12ch}h2{font-size:clamp(2rem,4vw,3.25rem)}h3{font-size:1.35rem}p{margin:0 0 1.1rem;color:var(--muted)}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),100% - 48px);margin:auto}.eyebrow{display:block;margin-bottom:14px;color:var(--teal);font-size:.76rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:999px;padding:13px 21px;border:1px solid transparent;font-weight:700;font-size:.95rem;transition:.2s ease}.btn-primary{background:var(--teal);color:#fff;box-shadow:0 10px 24px -12px rgba(14,143,134,.8)}.btn-primary:hover{background:#0a766f;transform:translateY(-2px)}.btn-outline{border-color:var(--line);color:var(--navy);background:#fff}.btn-outline:hover{border-color:var(--teal);color:var(--teal)}.btn-light{background:#fff;color:var(--navy)}.btn-light:hover{transform:translateY(-2px)}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(220,230,236,.8)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:10px;color:var(--navy);font-weight:700;letter-spacing:-.03em;font-size:1.2rem}.logo{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;color:#fff;background:linear-gradient(140deg,var(--navy),var(--teal))}.logo svg{width:22px}.nav-links{display:flex;align-items:center;gap:23px}.nav-links a{font-size:.9rem;color:var(--muted);font-weight:600}.nav-links a:hover{color:var(--navy)}.menu{display:none;border:0;background:none;color:var(--navy);font-size:1.7rem;cursor:pointer}.nav-cta{display:flex;align-items:center;gap:12px}
+    footer{padding:46px 0 27px;background:#071a2c;color:#a9bfcd}.footer-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;padding-bottom:29px;border-bottom:1px solid rgba(255,255,255,.12)}footer .brand{color:#fff}footer .logo{background:linear-gradient(135deg,#163d5b,var(--teal))}.footer-copy{max-width:350px;font-size:.9rem}.footer-links{display:flex;gap:52px}.footer-links h4{margin:0 0 12px;color:#fff;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}.footer-links a{display:block;margin:8px 0;font-size:.88rem}.footer-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;font-size:.8rem}
+    @media(max-width:940px){.nav-links{display:none;position:absolute;top:74px;left:0;right:0;padding:14px 24px 20px;background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}.nav-links.open{display:grid;gap:0}.nav-links a{padding:11px 0;border-bottom:1px solid var(--line)}.menu{display:block}.nav-cta .btn-outline{display:none}.hero-grid,.about,.execution,.contact,.modern-grid{grid-template-columns:1fr;gap:42px}.hero-panel{max-width:620px}.doors{grid-template-columns:1fr}.models{grid-template-columns:1fr 1fr}.expert{grid-template-columns:1fr}.initials{width:190px;height:190px;font-size:3.4rem}}
+    @media(max-width:560px){.wrap{width:min(var(--max),100% - 32px)}section{padding:68px 0}.hero{padding:67px 0 60px}.hero h1{font-size:2.7rem}.proof{gap:15px}.proof strong{font-size:1.25rem}.band .wrap{align-items:flex-start}.band p{font-size:.95rem}.models{grid-template-columns:1fr}.footer-links{gap:25px}.footer-bottom{display:block}.footer-bottom span{display:block;margin-top:5px}}
+    /* ---- Request page ---- */
+    .req-hero{padding:54px 0 26px;background:linear-gradient(145deg,#f4faf9 0%,#fff 62%)}
+    .req-hero h1{font-size:clamp(2.3rem,4.8vw,3.7rem);max-width:none}
+    .req-hero p{max-width:60ch;margin:16px 0 0;font-size:1.1rem}
+    .back{display:inline-block;margin-bottom:24px;color:var(--teal);font-weight:700;font-size:.92rem}
+    .req{padding:30px 0 90px}
+    .req-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(300px,.7fr);gap:48px;align-items:start}
+    fieldset{border:0;margin:0 0 36px;padding:0;min-width:0}
+    legend{display:flex;align-items:center;gap:12px;padding:0;margin-bottom:16px;color:var(--navy);font-weight:700;font-size:1.2rem;letter-spacing:-.02em}
+    legend i{width:30px;height:30px;flex:0 0 auto;border-radius:50%;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-style:normal;font-size:.9rem}
+    .pick{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .pick label{display:block;cursor:pointer;position:relative}
+    .pick input{position:absolute;opacity:0;pointer-events:none}
+    .pick .opt{display:block;height:100%;padding:15px 16px;border:1.5px solid var(--line);border-radius:14px;background:#fff;transition:.15s ease}
+    .pick .opt b{display:block;color:var(--navy);font-size:.98rem;line-height:1.25}
+    .pick .opt span{display:block;margin-top:5px;color:var(--muted);font-size:.85rem}
+    .pick label:hover .opt{border-color:#a9c6c4}
+    .pick input:checked+.opt{border-color:var(--teal);background:var(--mint);box-shadow:0 0 0 3px rgba(14,143,134,.14)}
+    .pick input:focus-visible+.opt{outline:2px solid var(--navy);outline-offset:2px}
+    .field{margin-bottom:20px}
+    .field>label{display:block;margin-bottom:5px;color:var(--navy);font-weight:700;font-size:.97rem}
+    .field .opt-tag{font-weight:500;color:var(--muted)}
+    .field .help{margin:0 0 8px;font-size:.87rem;line-height:1.5}
+    input[type=text],input[type=email],textarea{width:100%;font:inherit;font-size:1rem;color:var(--ink);padding:13px 14px;border:1.5px solid #c3d1da;border-radius:12px;background:#fff;transition:.15s ease}
+    textarea{min-height:132px;resize:vertical;line-height:1.55}
+    input::placeholder,textarea::placeholder{color:#8496a4}
+    input:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(14,143,134,.16)}
+    .count{margin-top:4px;text-align:right;font-size:.8rem;color:var(--muted)}
+    .msg{display:none;margin:7px 0 0;font-size:.88rem;line-height:1.45;font-weight:600}
+    .field.err input,.field.err textarea{border-color:#b3372f}
+    .field.err .msg{display:block;color:#a12d26}
+    .field.warn input,.field.warn textarea{border-color:#c47a0c;background:#fffaf0}
+    .field.warn .msg{display:block;color:#8a5200}
+    .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .guard{margin:4px 0 4px;padding:20px 22px;border-radius:16px;background:var(--paper);border:1px solid var(--warm-line)}
+    .guard h3{margin-bottom:12px;font-size:1.02rem;letter-spacing:-.01em}
+    .guard ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+    .guard li{display:flex;gap:11px;align-items:flex-start;color:var(--muted);font-size:.92rem;line-height:1.5}
+    .guard li:before{flex:0 0 auto;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-size:.8rem;font-weight:700;margin-top:1px}
+    .guard .yes:before{content:"\2713";background:var(--mint);color:var(--teal)}
+    .guard .no:before{content:"\00d7";background:#fbe8e6;color:#a12d26;font-size:1rem}
+    .guard li strong{color:var(--navy)}
+    .guard p{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--warm-line);font-size:.88rem}
+    .guard a,.req-next a{color:var(--teal);font-weight:700}
+    .consent{display:flex;gap:13px;align-items:flex-start;margin:6px 0 20px;padding:16px 18px;border:1.5px solid var(--line);border-radius:14px;cursor:pointer;color:var(--navy);font-size:.95rem;line-height:1.5}
+    .consent input{flex:0 0 auto;width:20px;height:20px;margin:2px 0 0;accent-color:var(--teal)}
+    .consent.err{border-color:#b3372f}
+    .send{width:100%;padding:16px 22px;font-size:1.02rem;cursor:pointer}
+    .send-note{margin:10px 0 0;text-align:center;font-size:.86rem}
+    .send-note a{color:var(--teal);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+    .req-next{margin-top:38px;padding-top:30px;border-top:1px solid var(--line)}
+    .req-next h2{font-size:1.25rem;letter-spacing:-.02em;margin-bottom:16px}
+    .req-next ol{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+    .req-next li{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start}
+    .req-next li i{width:28px;height:28px;border-radius:50%;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-style:normal;font-size:.85rem;font-weight:700}
+    .req-next li b{display:block;color:var(--navy);font-size:.98rem}
+    .req-next li span{color:var(--muted);font-size:.92rem;line-height:1.5}
+    .fine{margin-top:22px;font-size:.84rem;line-height:1.55}
+    .req-summary{position:sticky;top:96px;padding:28px;border-radius:22px;color:#fff;background:linear-gradient(160deg,var(--navy),#0c5260);box-shadow:var(--shadow)}
+    .req-summary .eyebrow{color:var(--teal-bright);margin-bottom:8px}
+    .req-summary h2{color:#fff;font-size:1.65rem;margin-bottom:10px}
+    .req-summary .q{margin:0 0 18px;font:600 1.04rem/1.4 Fraunces,serif;color:#d4e6ee}
+    .sum-more{border-top:1px solid rgba(255,255,255,.16)}
+    .sum-more>summary{list-style:none;cursor:pointer;padding:12px 0;font-weight:700;font-size:.9rem;color:#fff}
+    .sum-more>summary::-webkit-details-marker{display:none}
+    .sum-more>summary:after{content:"+";float:right;color:var(--teal-bright)}
+    .sum-more[open]>summary:after{content:"\2212"}
+    .sum-more dl{margin:0 0 4px}
+    .sum-more dt{margin-top:12px;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-bright)}
+    .sum-more dd{margin:4px 0 0;font-size:.93rem;line-height:1.5;color:#d3e4ec}
+    .req-summary .sum-price{margin-top:14px;padding-top:16px;border-top:1px solid rgba(255,255,255,.16)}
+    .sum-price small{display:block;font-size:.68rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-bright)}
+    .sum-price strong{display:block;margin-top:3px;font-size:1.8rem;letter-spacing:-.035em;color:#fff;line-height:1.15}
+    .sum-price strong em{font-style:normal;font-size:.95rem;font-weight:600;letter-spacing:0;color:#d3e4ec}
+    .sum-price p{margin:6px 0 0;font-size:.86rem;color:#b9d0dc}
+    .sent{display:none;padding:34px;border-radius:22px;background:var(--mint);border:1px solid #bfe0d9}
+    .sent h2{font-size:1.9rem;margin-bottom:12px}
+    .sent p{color:#3d5a5f}
+    .sent .copybox{margin:18px 0;padding:16px 18px;border-radius:12px;background:#fff;border:1px solid #c9e2dc;font:.86rem/1.55 ui-monospace,Consolas,monospace;color:var(--ink);white-space:pre-wrap;overflow-wrap:anywhere}
+    .sent .btn{margin-right:8px}
+    body.is-sent .sent{display:block}
+    body.is-sent #reqForm{display:none}
+    .pick-group{margin:18px 0 8px;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+    .pick-group:first-of-type{margin-top:4px}
+    .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+    .cfg-note{display:none;margin:0 0 14px;padding:12px 16px;border-radius:12px;background:#fffaf0;border:1px solid #ecd3a4;color:#6b4300!important;font-size:.9rem;line-height:1.5}
+    .cfg-note.show{display:block}
+    .form-error{display:none;margin:0 0 16px;padding:18px 20px;border-radius:16px;background:#fdf1f0;border:1.5px solid #e3b1ac}
+    .form-error.show{display:block}
+    .form-error h3{margin:0 0 6px;font-size:1.05rem;color:#8c2620}
+    .form-error p{margin:0 0 12px;color:#5a3b38;font-size:.95rem;line-height:1.55}
+    .fe-actions{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 12px}
+    .fe-actions .btn{padding:11px 18px;font-size:.92rem;cursor:pointer}
+    .form-error .copybox{margin:0;padding:14px 16px;border-radius:12px;background:#fff;border:1px solid #ecc9c5;font:.84rem/1.55 ui-monospace,Consolas,monospace;color:var(--ink);white-space:pre-wrap;overflow-wrap:anywhere;max-height:220px;overflow:auto}
+    .send[disabled]{opacity:.65;cursor:progress}
+    .so{display:none;padding:16px 18px;border:1.5px solid var(--teal);border-radius:14px;background:var(--mint)}
+    body.has-pick .so{display:block}
+    body.has-pick #chooser{display:none}
+    body.has-pick.chooser-open #chooser{display:block}
+    body.has-pick.chooser-open .so{margin-bottom:14px}
+    .so-top{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+    .so-group{display:block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+    .so-name{display:block;margin-top:2px;color:var(--navy);font-size:1.1rem;line-height:1.25}
+    .so-price{display:block;margin-top:3px;color:var(--muted);font-size:.9rem}
+    .so-change{flex:0 0 auto;padding:8px 14px;border:1.5px solid var(--teal);border-radius:999px;background:#fff;color:var(--teal);font:700 .85rem/1 "DM Sans",system-ui,sans-serif;cursor:pointer}
+    .so-change:hover{background:var(--teal);color:#fff}
+    .so-detail{display:none}
+    .so-q{margin:0 0 8px;font:600 .98rem/1.4 Fraunces,serif;color:var(--navy)}
+    .so details summary{cursor:pointer;color:var(--navy);font-weight:700;font-size:.9rem}
+    .so dl{margin:10px 0 0}.so dt{margin:8px 0 2px;font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}.so dd{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+    @media(max-width:940px){body.has-pick .req-summary{display:none}.so-detail{display:block;margin-top:12px;padding-top:12px;border-top:1px solid #bfe0d9}}
+    .pick-hint{display:none;margin:0 0 18px;padding:12px 16px;border-radius:12px;background:var(--mint);color:var(--navy)!important;font-weight:600;font-size:.95rem}
+    body.no-pick .pick-hint{display:block}
+    body.no-pick .stage{opacity:.38;pointer-events:none;user-select:none}
+    .scopeline{margin:6px 0 0;font-size:.95rem;color:#d3e4ec}.scopeline b{display:inline;font-size:1.5rem;letter-spacing:-.03em;color:#fff}
+    .termline{margin:2px 0 0;font-size:.88rem;font-weight:600;color:#fff}
+    .pend{margin:12px 0 0;padding:7px 11px;border-radius:8px;background:#fff1d6;border:1px solid #efc477;color:#7a4a06!important;font-size:.74rem;line-height:1.4;font-weight:700}
+    .pend.chosen{background:#e8f5f2;border-color:#b9ded7;color:#0a6f68!important}
+    @media(max-width:940px){.req-grid{grid-template-columns:1fr;gap:26px}.req-summary{position:static;order:-1;padding:22px}.pick{grid-template-columns:1fr}.pick .opt{display:flex;justify-content:space-between;align-items:baseline;gap:12px}.pick .opt span{margin:0;text-align:right;white-space:nowrap}}
+    @media(max-width:560px){.req-hero{padding:40px 0 18px}.row2{grid-template-columns:1fr}.sent{padding:24px}}
+
+    body.m-review [data-mode="advisory"]{display:none!important}
+    body.m-advisory [data-mode="review"]{display:none!important}
+    .switch{margin:14px 0 0;font-size:.9rem}.switch a{color:var(--teal);font-weight:700}
+    .pick .opt span{font-size:.82rem}
+
+/* ---- navigation matches the homepage: same seven labels, same 1080px break ---- */
+.nav{gap:18px}
+.nav-links{gap:16px}
+.nav-links a{white-space:nowrap;font-size:.93rem}
+.footer-links{gap:54px}
+.footer-links>div{display:flex;flex-direction:column;gap:9px}
+@media(max-width:1180px){.nav-links a{font-size:.88rem}.nav-links{gap:12px}}
+@media(max-width:1080px){
+  .nav-links{display:none;position:absolute;top:74px;left:0;right:0;padding:10px 24px 18px;
+    background:#fff;border-bottom:1px solid var(--line);box-shadow:var(--shadow);z-index:30}
+  .nav-links.open{display:grid;gap:0;grid-template-columns:1fr}
+  .nav-links a{padding:13px 2px;border-bottom:1px solid var(--line);font-size:1rem;white-space:normal}
+  .nav-links a:last-child{border-bottom:0}
+  .menu{display:block}
+  .nav-cta .btn-outline{display:none}
+}
+@media(max-width:700px){.footer-links{gap:30px}}
+@media(max-width:600px){
+  .pick .opt{display:block}
+  .pick .opt span{margin-top:5px;text-align:left;white-space:normal}
+}
+/* ---- the dark summary panel: 11px labels at 3.1-3.6:1 measured from the rendered pixels ---- */
+.req-summary .eyebrow,.req-summary dt,.req-summary small{color:#8ce8db}
+/* ---- the general inquiry arrives with nothing to choose between ---- */
+body.solo #changeOffer{display:none}
+body.solo #chooser .pick,body.solo #chooser .pick-group{display:none}
+body.solo #chooser .switch{margin-top:16px}
+/* the page eyebrow already says "General inquiry"; the card and the panel do not repeat it */
+body.solo #so-group,body.solo #s-eyebrow{display:none}
+/* ---- the general inquiry: an invitation to make contact ---- */
+#sumNext{display:none}
+body.solo #sumNext{display:block}
+body.solo .req-summary>:not(#sumNext){display:none}
+body.solo #reqForm>fieldset{display:none}
+#sumNext small{display:block;font-size:.68rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:#8ce8db}
+#sumNext .next-2{margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.16)}
+#sumNext h2{color:#fff;font-size:1.5rem;line-height:1.2;margin:7px 0 11px}
+#sumNext p{margin:0;font-size:.95rem;line-height:1.55;color:#d3e4ec}
+#sumNext .next-2+p{margin-top:9px}
+/* the panel now carries the sequence, so the long version below it is not repeated here */
+body.solo .req-next[data-mode='advisory']>h2,
+body.solo .req-next[data-mode='advisory']>ol{display:none}
+body.solo .req-next[data-mode='advisory']>.fine{margin-top:0}
+@media(max-width:940px){body.solo .req-summary{display:block}}
+
+/* ---- contrast: teal is darkened for text use; artwork keeps its own color ---- */
+:root{--teal:#0a6b63;--teal-bright:#1f9d90;--muted:#44576b}
+.btn-primary{box-shadow:0 10px 24px -12px rgba(10,107,99,.75)}
+.btn-primary:hover{background:#085a53}
+</style>
+</head>
+<body id="top">
+  <header><div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="BiotecMaven home"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v3a4 4 0 0 0 8 0V3M8 21v-3a4 4 0 0 1 8 0v3M8 6h8M8 18h8M9.5 9.5h5M9.5 14.5h5"/></svg></span>BiotecMaven</a>
+    <nav class="nav-links" id="navLinks"><a href="index.html#biologics">How I Help</a><a href="index.html#reviews">Maven Reviews</a><a href="index.html#watch">Maven Watch</a><a href="index.html#forge">Maven Forge</a><a href="index.html#second-life">Second Life</a><a href="index.html#expert">About</a><a href="index.html#contact">Contact</a></nav>
+    <div class="nav-cta"><a class="btn btn-outline" data-cta="nav" href="request.html?project=other">Discuss Your Program</a><button class="menu" id="menuBtn" aria-label="Open navigation">☰</button></div>
+  </div></header>
+  <main>
+    <section class="req-hero"><div class="wrap">
+      <a class="back" id="backLink" href="index.html#reviews">&larr; Back to the site</a>
+      <span class="eyebrow" id="h-eyebrow"></span>
+      <h1 id="h-title"></h1>
+      <p id="h-lead"></p>
+    </div></section>
+
+    <section class="req"><div class="wrap req-grid">
+      <div>
+        <!-- FORM SERVICE (Formspree). Live submission is UNCONFIGURED until data-endpoint holds the real form URL,
+             https://formspree.io/f/<form id>. While it is empty the page says so and never shows a success message.
+             Optional: data-turnstile-sitekey turns on Cloudflare Turnstile. See launch/FORMSPREE_SETUP.md. -->
+        <form id="reqForm" novalidate data-endpoint="https://formspree.io/f/mkjgvqkr" data-turnstile-sitekey="">
+          <noscript><p class="help">This form needs JavaScript. You can email your nonconfidential summary to <a href="mailto:vibhachauhan@biotecmaven.com">vibhachauhan@biotecmaven.com</a>.</p></noscript>
+          <fieldset>
+            <legend><i>1</i><span id="l-choose"></span></legend>
+            <div class="so" id="selectedOffer">
+              <div class="so-top">
+                <div><span class="so-group" id="so-group"></span><b class="so-name" id="so-name"></b><span class="so-price" id="so-price"></span></div>
+                <button type="button" class="so-change" id="changeOffer" aria-expanded="false" aria-controls="chooser">Change offer</button>
+              </div>
+              <div class="so-detail">
+                <p class="so-q" id="so-q"></p>
+                <details id="so-more"><summary>What you receive, and what you do not</summary>
+                  <dl><dt id="so-recv-l">You receive</dt><dd id="so-recv"></dd><dt id="so-bound-l">Not included</dt><dd id="so-bound"></dd></dl></details>
+              </div>
+            </div>
+            <div id="chooser">
+            <div class="pick-group" data-mode="review">Maven Reviews</div>
+            <div class="pick" data-mode="review" role="radiogroup" aria-label="Maven Reviews">
+              <label><input type="radio" name="special" value="target-landscape"><span class="opt"><b>Target &amp; Competitive Landscape</b><span>Defined scope. Fixed price agreed before work begins.</span></span></label>
+              <label><input type="radio" name="special" value="investor-brief"><span class="opt"><b>Investor Science Brief</b><span>Defined scope. Fixed price agreed before work begins.</span></span></label>
+              <label><input type="radio" name="special" value="biologic-format-options"><span class="opt"><b>Biologic Format Options</b><span>Defined scope. Fixed price agreed before work begins.</span></span></label>
+            </div>
+            <div class="pick-group" data-mode="review">Maven Watch &middot; ongoing monthly service</div>
+            <div class="pick" data-mode="review" role="radiogroup" aria-label="Maven Watch">
+              <label><input type="radio" name="special" value="target-watch"><span class="opt"><b>Target Watch</b><span>Monthly scope and price agreed in advance.</span></span></label>
+            </div>
+            <div class="pick-group" data-mode="advisory">Maven Forge</div>
+            <div class="pick" data-mode="advisory" role="radiogroup" aria-label="Maven Forge">
+              <label><input type="radio" name="project" value="construct-design"><span class="opt"><b>Construct Design</b><span>Individually scoped.</span></span></label>
+              <label><input type="radio" name="project" value="program-troubleshooting"><span class="opt"><b>Program Troubleshooting</b><span>Individually scoped.</span></span></label>
+              <label><input type="radio" name="project" value="next-experiment"><span class="opt"><b>The Next Experiment</b><span>Individually scoped.</span></span></label>
+            </div>
+            <div class="pick-group" data-mode="advisory">Second Life</div>
+            <div class="pick" data-mode="advisory" role="radiogroup" aria-label="Second Life">
+              <label><input type="radio" name="project" value="second-life"><span class="opt"><b>Second Life for Biologics</b><span>Individually scoped.</span></span></label>
+            </div>
+            <div class="pick-group" data-mode="advisory">General inquiry</div>
+            <div class="pick" data-mode="advisory" role="radiogroup" aria-label="General inquiry">
+              <label><input type="radio" name="project" value="other"><span class="opt"><b>A larger or different question</b><span>Individually scoped.</span></span></label>
+            </div>
+            <p class="switch" id="switch"></p>
+            </div>
+          </fieldset>
+
+          <p class="pick-hint" id="pickHint">Choose one above to continue.</p>
+          <div class="stage" id="stage">
+          <fieldset>
+            <legend><i>2</i><span id="l-step2"></span></legend>
+            <div class="guard" data-mode="review">
+              <h3>Public names and nonconfidential questions only</h3>
+              <ul>
+                <li class="yes"><span><strong>Fine to include:</strong> a public target or asset name (a gene symbol, an INN, or a public development code) and a general question about it.</span></li>
+                <li class="no"><span><strong>Please leave out:</strong> sequences, structures, unpublished data, internal program names or IDs, proprietary details, and anything covered by an NDA. There is no upload on this page.</span></li>
+              </ul>
+              <p>Please do not send anything confidential through this page.</p>
+            </div>
+            <div class="guard" data-mode="advisory">
+              <h3>A short, nonconfidential summary only</h3>
+              <ul>
+                <li class="yes"><span><strong>Fine to include:</strong> the kind of molecule or program, the decision you face, and what is at stake, in general terms.</span></li>
+                <li class="no"><span><strong>Please leave out:</strong> sequences, structures, data, internal program names or IDs, and anything covered by an NDA. There is no upload on this page.</span></li>
+              </ul>
+            </div>
+            <div style="height:20px"></div>
+            <div class="field" id="f-q"><label for="q"><span id="l-q"></span></label><textarea id="q" name="q" maxlength="800"></textarea><div class="count"><span id="n-q">0</span> / <span id="max-q">600</span></div><p class="msg" id="m-q"></p></div>
+          </fieldset>
+
+          <fieldset>
+            <legend><i>3</i>Where should I reply?</legend>
+            <div class="row2">
+              <div class="field" id="f-name"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" /><p class="msg" id="m-name"></p></div>
+              <div class="field" id="f-email"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" /><p class="msg" id="m-email"></p></div>
+            </div>
+            <label class="consent" id="f-consent"><input type="checkbox" id="consent" /><span id="consentText"></span></label>
+            <div class="hp" aria-hidden="true"><label>Leave this field empty<input type="text" id="hp" name="_gotcha" tabindex="-1" autocomplete="off" /></label></div>
+            <div class="field" id="f-ts" style="display:none"><div id="tsBox"></div><p class="msg" id="m-ts"></p></div>
+            <p class="cfg-note" id="cfgNote">Sending is not switched on yet: this form is not connected to the form service. You can fill it in and copy the message to email.</p>
+            <div class="form-error" id="formError" role="alert" tabindex="-1">
+              <h3 id="fe-title"></h3><p id="fe-msg"></p>
+              <div class="fe-actions"><button type="button" class="btn btn-primary" id="retryBtn">Try again</button><button type="button" class="btn btn-outline" id="feCopy">Copy my message</button><a class="btn btn-outline" id="feMail" href="mailto:vibhachauhan@biotecmaven.com">Email it instead</a></div>
+              <div class="copybox" id="feBox"></div>
+            </div>
+            <button type="submit" class="btn btn-primary send" id="sendBtn" data-cta="request-send"></button>
+            <p class="send-note" id="sendNote"></p>
+          </fieldset>
+          </div>
+        </form>
+
+        <div class="sent" id="sent" role="status" aria-live="polite">
+          <span class="eyebrow">Received</span>
+          <h2 id="sent-title"></h2>
+          <p>Thank you. Your message reached me through the form service. I will reply to <strong id="sent-email"></strong>. Nothing has been charged.</p>
+          <div class="copybox" id="copybox"></div>
+          <a class="btn btn-primary" id="sentBack" href="index.html">Back to the site</a>
+        </div>
+
+        <div class="req-next" data-mode="review">
+          <h2>What happens after you send</h2>
+          <ol>
+            <li><i>1</i><div><b>I read your inquiry and reply by email.</b><span>If your question is outside what this offer can answer, I will say so and suggest the right path. If a short call would help, I will send you a private link for a 30-minute project-fit call.</span></div></li>
+            <li><i>2</i><div><b>You get a written confirmation.</b><span>The scope, the deliverable, the date and a fixed price.</span></div></li>
+            <li><i>3</i><div><b>You accept the terms before work begins.</b><span>Nothing is paid through this website.</span></div></li>
+            <li><i>4</i><div><b>You receive the deliverable.</b><span>Written, on the agreed date. For Target Watch, a brief each month.</span></div></li>
+          </ol>
+          <p class="fine">Reviews and Target Watch answer scientific questions from public information. They are not investment, legal, regulatory or medical advice.</p>
+        </div>
+        <div class="req-next" data-mode="advisory">
+          <h2>What happens after you send</h2>
+          <ol>
+            <li><i>1</i><div><b>I read your summary and reply by email.</b><span>I say whether and how I can help. If a short call would help, I will send you a private link for a 30-minute project-fit call.</span></div></li>
+            <li><i>2</i><div><b>We arrange confidentiality if the discussion needs it.</b><span>Before you share proprietary project details, we put appropriate confidentiality terms in place.</span></div></li>
+            <li><i>3</i><div><b>We define the work together.</b><span>Once I understand the project, we agree on the scope, price, and payment terms before work begins.</span></div></li>
+          </ol>
+          <p class="fine">Advisory work answers scientific questions. It is not investment, legal, regulatory or medical advice.</p>
+        </div>
+      </div>
+
+      <aside class="req-summary" aria-live="polite">
+        <div class="sum-next" id="sumNext">
+          <small>What happens next</small>
+          <h2>We start with a conversation.</h2>
+          <p>I&rsquo;ll read your summary and reply by email. If a conversation would help, we can discuss the project in general terms.</p>
+          <small class="next-2">Before work begins</small>
+          <p>If we need to discuss confidential details, we&rsquo;ll arrange appropriate confidentiality terms first. Then we can define the scope, price, and payment terms together.</p>
+        </div>
+        <span class="eyebrow" id="s-eyebrow"></span>
+        <h2 id="s-name"></h2>
+        <p class="q" id="s-q"></p>
+        <details class="sum-more" id="sumMore" open><summary>What you receive, and what you do not</summary>
+          <dl><dt id="s-recv-l">You receive</dt><dd id="s-recv"></dd><dt id="s-bound-l">Not included</dt><dd id="s-bound"></dd></dl></details>
+        <div class="sum-price" id="sumPrice"><small id="s-pricelabel"></small><p class="scopeline" id="s-scope"></p><p class="termline" id="s-term"></p></div>
+      </aside>
+    </div></section>
+  </main>
+
+  <footer><div class="wrap"><div class="footer-top"><div><a class="brand" href="index.html"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v3a4 4 0 0 0 8 0V3M8 21v-3a4 4 0 0 1 8 0v3M8 6h8M8 18h8M9.5 9.5h5M9.5 14.5h5"/></svg></span>BiotecMaven</a></div><div class="footer-links"><div><h4>Explore</h4><a href="index.html#biologics">How I Help</a><a href="index.html#reviews">Maven Reviews</a><a href="index.html#watch">Maven Watch</a><a href="index.html#forge">Maven Forge</a><a href="index.html#second-life">Second Life</a><a href="index.html#expert">About</a><a href="index.html#contact">Contact</a></div><div><h4>Connect</h4><a href="mailto:vibhachauhan@biotecmaven.com">Email</a><a href="https://www.linkedin.com/in/vibhachauhan/" target="_blank" rel="noopener">LinkedIn</a><a href="privacy.html">Privacy</a></div></div></div><div class="footer-bottom"><span>© 2026 BiotecMaven. All rights reserved.</span></div></div></footer>
+    <script>
+  (function(){
+    // Mobile menu
+    (function(){var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');b.addEventListener('click',function(){n.classList.toggle('open')});n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open')})});})();
+    var D={"review": {"target-landscape": {"name": "Target & Competitive Landscape", "q": "Is this target worth a biologic program, and who is already there?", "recv": "A written read of the target biology, the public programs against it and what remains unsolved, ending in a stated call: proceed, resolve first, hold or stop.", "bound": "Freedom-to-operate, valuation, non-public data, or comprehensive due diligence.", "term": "", "a": ["Public target name", "A gene or protein symbol, or its common name.", "e.g. a gene symbol"], "c": ["Indication of interest", "e.g. a disease or setting"], "fq": ["What decision will this inform?", "e.g. Whether this target is worth a biologic program in this indication."], "group": "Maven Reviews", "pl": ["Defined scope.", "Fixed price agreed before work begins."]}, "investor-brief": {"name": "Investor Science Brief", "q": "Is the science behind this company or asset credible?", "recv": "A written brief on how plausible the mechanism is, how strong the public evidence is, the main scientific risks, and the questions to put to management.", "bound": "Investment advice, valuation, data-room review, or comprehensive due diligence.", "term": "", "a": ["Public company or asset name", "As it appears in a public source.", "e.g. a company or drug name"], "c": ["Your role", "e.g. investor, analyst, business development"], "fq": ["What are you deciding?", "e.g. Whether the lead asset's mechanism is scientifically credible."], "group": "Maven Reviews", "pl": ["Defined scope.", "Fixed price agreed before work begins."]}, "target-watch": {"name": "Target Watch", "q": "A target you care about keeps moving. What changed this month, and does it matter?", "recv": "A written brief each month on that target: new publications, trials, disclosures and patents, each with a brief assessment of its relevance to your program.", "bound": "More than one target, real-time alerts, non-public sources, or legal or investment advice.", "term": "", "a": ["Public target name", "A gene or protein symbol, or its common name.", "e.g. a gene symbol"], "c": ["Indication you care about", "e.g. a disease or setting"], "fq": ["What should I flag for you?", "e.g. New clinical readouts, competitor entries and safety signals."], "group": "Maven Watch", "pl": ["Monthly scope and price agreed in advance.", ""]}, "biologic-format-options": {"name": "Biologic Format Options", "q": "Which biologic formats are worth considering for the mechanism you need?", "recv": "A written comparison of the plausible formats, such as IgG, bispecific, Fc-fusion or VHH, with the trade-offs of each and a shortlist of up to two.", "bound": "Sequences, construct-level design, or lab work.", "term": "", "a": ["Public target or mechanism", "A public name only, for example a target pair or a mechanism of action.", "e.g. a target pair or mechanism"], "c": ["Formats you are considering", "e.g. IgG, bispecific, Fc-fusion"], "fq": ["What must the molecule do?", "e.g. Engage two targets on one cell while keeping a long half-life."], "group": "Maven Reviews", "pl": ["Defined scope.", "Fixed price agreed before work begins."]}}, "advisory": {"construct-design": {"name": "Construct Design", "q": "How should this construct be laid out to give it the best chance of expressing and behaving?", "recv": "A construct design with the reasoning behind it, the alternatives considered, and the expression risks to watch.", "bound": "", "c": ["Kind of molecule or program, in general terms", "e.g. a bispecific T-cell engager for a solid tumor"], "fq": ["What are you trying to decide or solve?", "In general terms. Please leave out sequences, data and proprietary details."], "group": "Maven Forge"}, "program-troubleshooting": {"name": "Program Troubleshooting", "q": "Your molecule isn't expressing or behaving as expected. What should you check first, and what does your data point to?", "recv": "An ordered list of what to check first, with the reasoning from your data and the experiments that would tell the possible causes apart.", "bound": "", "c": ["Kind of molecule or program, in general terms", "e.g. an Fc-fusion protein in CHO"], "fq": ["What are you seeing?", "In general terms, e.g. low titer or aggregation. Please leave out data and proprietary details."], "group": "Maven Forge"}, "next-experiment": {"name": "The Next Experiment", "q": "Several experiments could come next. Which one would change your decision, given what you know?", "recv": "A comparison of the experiments you could run, a recommendation against the decision you face, and the result that would change it.", "bound": "", "c": ["Kind of molecule or program, in general terms", "e.g. an antibody against a validated target"], "fq": ["What decision are you weighing?", "In general terms. Please leave out data and proprietary details."], "group": "Maven Forge"}, "second-life": {"name": "Second Life for Biologics", "q": "Given today's science and today's competition, was stopping right? Should this asset be revived, tested once more, or stay shelved?", "recv": "A written decision memo: revive, run one discriminating test, or stay shelved, with the evidence behind it. What is missing is kept separate from what argues against the idea.", "bound": "A valuation, a license or freedom-to-operate opinion, or any promise that the asset will be revived.", "c": ["Your company's relationship to the asset", "e.g. we own it, or we control the rights"], "fq": ["What is the situation, in general terms?", "e.g. a biologic shelved after a mid-stage result; we hold the program data. Please leave out names, sequences, data and IDs."], "group": "Second Life", "hdr": {"eyebrow": "Second Life", "title": "Tell me about the shelved asset.", "lead": "A re-analysis of the original decision to stop, using your own historical program data. The conclusion may be to revive the asset, to run one discriminating test, or to leave it shelved. Start with a short, nonconfidential summary.", "back": "index.html#second-life"}}, "other": {"name": "General inquiry", "q": "What decision are you facing, and what is at stake?", "c": ["Kind of molecule or program, in general terms", "e.g. a program at the preclinical stage"], "fq": ["What are you trying to decide or solve?", "In general terms. Please leave out sequences, data and proprietary details."], "group": "General inquiry", "hdr": {"eyebrow": "General inquiry", "title": "Tell me what you are working through.", "choose": "Your inquiry", "lead": "Tell me the decision you are facing, in general terms. A short, nonconfidential summary is enough to start.", "back": "index.html#contact"}}}};
+    var $=function(i){return document.getElementById(i)};
+    var q0=new URLSearchParams(location.search);
+    var mode=q0.has('project')?'advisory':'review';
+    var MAIL='vibhachauhan@biotecmaven.com';
+    var EP_OK=/^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/;   // the only endpoint shape accepted; empty means UNCONFIGURED
+    var form=$('reqForm'),cur=null,sending=false,tsId=null;
+    var COPY={
+      review:{eyebrow:'Request a quote',title:'Tell me the question.',
+        lead:'Public names and nonconfidential questions only. Sending this opens an inquiry; I reply with the scope, the deliverable and the date.',
+        choose:'Choose an offer',step2:'What are we looking at?',consent:'I confirm this request contains only public names and nonconfidential information. I have not included sequences, data or unpublished details.',
+        send:'Send request',note:'Nothing is charged when you send this. Your message is sent through Formspree, a form service, to '+MAIL+'. <a href="privacy.html">Privacy notice</a>',sent:'Your request has been sent.',max:600,
+        sw:'Have a question that needs your own information? <a href="request.html?project=">See Maven Forge.</a>',
+        seq:'This looks like a sequence. Please remove it: this form is for public names only.',back:'index.html#reviews',confirm:'I confirm this request contains only public names and nonconfidential information.'},
+      advisory:{eyebrow:'Maven Forge',title:'Tell me about your program.',
+        lead:'Start with a short, nonconfidential summary. Nothing confidential goes through this website.',
+        choose:'Choose a project',step2:'Your summary',consent:'I confirm this summary is nonconfidential. I understand that proprietary details come later, once confidentiality terms are in place.',
+        send:'Send summary',note:'Nothing is charged, and no confidential detail is needed at this stage. Your message is sent through Formspree, a form service, to '+MAIL+'. <a href="privacy.html">Privacy notice</a>',sent:'Your summary has been sent.',max:800,
+        sw:'Looking for a public-information review or Target Watch instead? <a href="request.html">See Maven Reviews and Maven Watch.</a>',
+        seq:'This looks like a sequence. Please remove it: this first message is for a nonconfidential summary only.',back:'index.html#forge',confirm:'I confirm this summary is nonconfidential.'}};
+    var C=COPY[mode];
+    document.body.classList.add('m-'+mode);
+    var items=D[mode];
+    function endpoint(){return (form.getAttribute('data-endpoint')||'').trim();}
+    function configured(){return EP_OK.test(endpoint());}
+    function reset(){cur=null;document.body.classList.add('no-pick');document.body.classList.remove('has-pick','chooser-open');$('l-choose').textContent=C.choose;
+      $('s-eyebrow').textContent=mode==='review'?'You are requesting':'You are asking about';
+      $('s-name').textContent=mode==='review'?'Choose an offer':'Choose a project';$('s-q').textContent='Pick one to see what it involves.';
+      $('sumMore').style.display='none';$('sumPrice').style.display='none';
+      $('l-q').textContent=mode==='review'?'Your question':'Your summary';
+      $('h-eyebrow').textContent=C.eyebrow;$('h-title').textContent=C.title;$('h-lead').textContent=C.lead;
+      $('backLink').href=C.back;$('sentBack').href=C.back;}
+    function apply(k){cur=k;var s=items[k];document.body.classList.remove('no-pick','chooser-open');document.body.classList.add('has-pick');setChange(false);hideError();$('l-choose').textContent=mode==='review'?'Your offer':'Your project';
+      $('s-eyebrow').textContent=s.group;
+      $('s-name').textContent=s.name;$('s-q').textContent=s.q||'Tell me what you are working through, in general terms.';
+      $('sumPrice').style.display="";
+      if(mode==='review'){
+        $('sumMore').style.display="";$('s-recv-l').textContent='You receive';$('s-recv').textContent=s.recv;$('s-bound-l').style.display="";$('s-bound').style.display="";$('s-bound').textContent=s.bound;
+        $('s-pricelabel').textContent='Scope and price';$('s-scope').innerHTML='<b>'+s.pl[0]+'</b>';$('s-term').textContent=s.pl[1]||'';
+      }else{
+        if(s.recv){$('sumMore').style.display="";$('s-recv-l').textContent='Typical deliverable';$('s-recv').textContent=s.recv;
+          $('s-bound-l').style.display=s.bound?"":"none";$('s-bound').style.display=s.bound?"":"none";$('s-bound').textContent=s.bound;}
+        else{$('sumMore').style.display='none';}
+        $('s-pricelabel').textContent='Scope and price';$('s-scope').innerHTML='<b>Individually scoped.</b>';$('s-term').textContent='Scope and price are agreed with you before work begins.';
+      }
+      $('l-q').textContent=s.fq[0];$('q').placeholder=s.fq[1];
+      // selected-offer bar (shown in place of the chooser; the full detail shows here on small screens)
+      $('so-group').textContent=s.group;$('so-name').textContent=s.name;
+      $('so-price').textContent=mode==='review'?s.pl.join(' '):'Individually scoped.';
+      $('so-q').textContent=s.q||'Tell me what you are working through, in general terms.';
+      if(s.recv){$('so-more').style.display="";$('so-recv-l').textContent=mode==='review'?'You receive':'Typical deliverable';$('so-recv').textContent=s.recv;
+        $('so-bound-l').style.display=s.bound?"":"none";$('so-bound').style.display=s.bound?"":"none";$('so-bound').textContent=s.bound||"";}
+      else{$('so-more').style.display='none';}
+      var H=s.hdr||{};
+      if(H.choose)$('l-choose').textContent=H.choose;
+      $('h-eyebrow').textContent=H.eyebrow||C.eyebrow;$('h-title').textContent=H.title||C.title;
+      $('h-lead').textContent=H.lead||C.lead;
+      $('backLink').href=H.back||C.back;$('sentBack').href=H.back||C.back;
+      document.querySelector('.pick[data-mode='+mode+'] input[value='+k+']').checked=true;}
+    function setChange(open){var b=$('changeOffer');b.textContent=open?'Close':'Change offer';b.setAttribute('aria-expanded',open?'true':'false');}
+    // Paste-accident prompt only. It cannot recognize confidential content and is NOT a confidentiality control.
+    // What the page can do is ask, provide no upload field, and arrange confidential intake separately after agreement.
+    function looksLikeSequence(t){
+      if(/[ACDEFGHIKLMNPQRSTVWY]{20,}/i.test(t))return true;
+      if(/(?:\b[ACDEFGHIKLMNPQRSTVWY]{8,}\b[\s\d]*){3,}/.test(t))return true;
+      return false;}
+    function setState(id,kind,text){var f=$('f-'+id);f.classList.remove('err','warn');if(kind)f.classList.add(kind);var m=$('m-'+id);if(m)m.textContent=text||"";}
+    function check(){var ok=true,first=null;
+      function bad(id,t){setState(id,'err',t);ok=false;if(!first)first=$(id);}
+      setState('q',null,"");
+      if(looksLikeSequence($('q').value))bad('q',C.seq);
+      if(!$('q').value.trim())bad('q',mode==='review'?'Please add your question.':'Please add a short summary.');
+      setState('name',null,"");setState('email',null,"");
+      if(!$('name').value.trim())bad('name','Please add your name.');
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($('email').value.trim()))bad('email','Please add a valid email address.');
+      $('f-consent').classList.toggle('err',!$('consent').checked);
+      if(!$('consent').checked){ok=false;if(!first)first=$('consent');}
+      if(first)first.focus();return ok;}
+    // static copy for this mode
+    $('h-eyebrow').textContent=C.eyebrow;$('h-title').textContent=C.title;$('h-lead').textContent=C.lead;
+    $('l-choose').textContent=C.choose;$('l-step2').textContent=C.step2;$('consentText').textContent=C.consent;
+    $('sendBtn').textContent=C.send;$('sendNote').innerHTML=C.note;$('sent-title').textContent=C.sent;$('switch').innerHTML=C.sw;
+    $('max-q').textContent=C.max;$('q').maxLength=C.max;$('backLink').href=C.back;$('sentBack').href=C.back;
+    if(!configured())$('cfgNote').classList.add('show');
+    $('q').addEventListener('input',function(){
+      $('n-q').textContent=$('q').value.length;
+      if(looksLikeSequence($('q').value))setState('q','warn',C.seq);else setState('q',null,"");});
+    document.querySelectorAll('.pick[data-mode='+mode+'] input').forEach(function(r){r.addEventListener('change',function(){
+      if(mode==='advisory'&&r.value==='other'){location.href='request.html?project=other';return;}
+      apply(r.value);history.replaceState(null,"",'?'+(mode==='review'?'special':'project')+'='+r.value);});});
+
+    // ---- the message, built once and used for the form service, the copy box and the email fallback
+    function compose(){var s=items[cur],q=$('q').value.trim(),name=$('name').value.trim(),email=$('email').value.trim(),lines,subject;
+      if(mode==='review'){lines=[s.group+': '+s.name,"",'Question:',q];subject='Request: '+s.name;}
+      else{lines=[(s.group&&s.group!==s.name?s.group+': '+s.name:s.name),"",'Nonconfidential summary:',q];subject='Discuss: '+s.name;}
+      lines.push("",'From: '+name+' <'+email+'>',"",C.confirm);
+      var body=lines.join('\n');
+      var fields={subject:subject,section:s.group,offer:s.name,name:name,email:email,message:q,confirmation:C.confirm,_gotcha:$('hp').value};
+      return {subject:subject,body:body,fields:fields,email:email};}
+    function hideError(){$('formError').classList.remove('show');}
+    function showError(kind,m,info){
+      var t,msg,retry=true;
+      if(kind==='unconfigured'){t='Sending is not switched on yet';msg='This form is not connected to the form service, so nothing was sent. Your entries are still here. Copy your message and email it to '+MAIL+'.';retry=false;}
+      else if(kind==='network'){t='We could not send your message';msg='The form service could not be reached, so nothing was sent. Your entries are still here. Try again, or copy your message and email it to '+MAIL+'.';}
+      else{t='The form service did not accept your message';msg='Nothing was sent (status '+info.status+'). '+(info.msgs.length?info.msgs.map(function(x){return /[.!?]$/.test(x)?x:x+'.';}).join(' ')+' ':'')+'Your entries are still here. Try again, or copy your message and email it to '+MAIL+'.';}
+      $('fe-title').textContent=t;$('fe-msg').textContent=msg;
+      $('feBox').textContent='To: '+MAIL+'\nSubject: '+m.subject+'\n\n'+m.body;
+      $('feMail').href='mailto:'+MAIL+'?subject='+encodeURIComponent(m.subject)+'&body='+encodeURIComponent(m.body);
+      $('retryBtn').style.display=retry?"":"none";
+      $('formError').classList.add('show');$('formError').focus();
+      if(tsId!==null&&window.turnstile){try{window.turnstile.reset(tsId);}catch(e){}}}
+    function setSending(on){sending=on;var b=$('sendBtn');b.disabled=on;b.setAttribute('aria-busy',on?'true':'false');b.textContent=on?'Sending\u2026':C.send;}
+    function onSuccess(m){$('copybox').textContent='To: '+MAIL+'\nSubject: '+m.subject+'\n\n'+m.body;$('sent-email').textContent=m.email;
+      document.body.classList.add('is-sent');$('sent').scrollIntoView({block:'start'});}
+    async function submit(){
+      if(sending)return;
+      if(!cur){document.querySelector('.pick[data-mode='+mode+'] input').focus();return;}
+      hideError();
+      if(!check())return;
+      var m=compose();
+      if(!configured()){showError('unconfigured',m);return;}
+      var fd=new FormData();Object.keys(m.fields).forEach(function(k){fd.append(k,m.fields[k]);});
+      if((form.getAttribute('data-turnstile-sitekey')||'').trim()){
+        var tk=form.querySelector('[name="cf-turnstile-response"]');
+        if(!tk||!tk.value){setState('ts','err','Please complete the check above.');return;}
+        setState('ts',null,"");fd.append('cf-turnstile-response',tk.value);}
+      setSending(true);
+      var ctl=new AbortController(),timer=setTimeout(function(){ctl.abort();},20000);
+      try{
+        var res=await fetch(endpoint(),{method:'POST',body:fd,headers:{'Accept':'application/json'},signal:ctl.signal});
+        var data=null;try{data=await res.json();}catch(e){}
+        // Success only when the provider answers with a 2xx and no error payload.
+        if(res.ok&&!(data&&(data.ok===false||data.error||(data.errors&&data.errors.length)))){onSuccess(m);}
+        else{var msgs=[];if(data&&data.errors)data.errors.forEach(function(x){if(x&&x.message)msgs.push(String(x.message));});if(data&&data.error)msgs.push(String(data.error));
+          showError('rejected',m,{status:res.status,msgs:msgs});}
+      }catch(e){showError('network',m);}
+      finally{clearTimeout(timer);setSending(false);}}
+    form.addEventListener('submit',function(e){e.preventDefault();submit();});
+    $('retryBtn').addEventListener('click',function(){submit();});
+    $('changeOffer').addEventListener('click',function(){var open=!document.body.classList.contains('chooser-open');document.body.classList.toggle('chooser-open',open);setChange(open);
+      if(open){var c=document.querySelector('.pick[data-mode='+mode+'] input:checked')||document.querySelector('.pick[data-mode='+mode+'] input');c.focus();}});
+    $('feCopy').addEventListener('click',function(){var t=$('feBox').textContent;try{navigator.clipboard.writeText(t).then(function(){$('feCopy').textContent='Copied';});}catch(e){var r=document.createRange();r.selectNodeContents($('feBox'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);}});
+    // Optional Cloudflare Turnstile (Formspree verifies the token with your secret key). Off until a site key is set.
+    var sk=(form.getAttribute('data-turnstile-sitekey')||'').trim();
+    if(sk){var sc=document.createElement('script');sc.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';sc.async=true;sc.onload=function(){$('f-ts').style.display='';tsId=window.turnstile.render('#tsBox',{sitekey:sk});};document.head.appendChild(sc);}
+    var want=q0.get(mode==='review'?'special':'project');
+    if(items[want])apply(want);else reset();
+    // the general inquiry is not a choice between offers: show the one selection and the form
+    if(mode==='advisory'&&want==='other'){document.body.classList.add('solo');
+      // step 1 is gone, so the two remaining steps are renumbered in the DOM itself: a CSS
+      // counter would leave a screen reader announcing the old numbers.
+      var st=document.querySelectorAll('#stage legend i');
+      for(var z=0;z<st.length;z++)st[z].textContent=String(z+1);
+    }   // unknown or retired links land on the empty chooser
+    if(window.innerWidth<=940)$('sumMore').removeAttribute('open');
+  })();
+</script>
+</body>
+</html>
