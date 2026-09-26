@@ -2,7 +2,7 @@
 
 The website for BiotecMaven — strategic biologics & computational biology consulting by Dr. Vibha Chauhan.
 
-The site is a lightweight static page: **`index.html`** contains the layout, styling, and scripts, with the founder portrait served from **`assets/vibha-chauhan.jpg`**.
+The site is static: three hand-written pages, each carrying its own styling and scripts, with the shared tokens, the illustrations and the founder portrait under **`assets/`**. There is no build step.
 
 ---
 
@@ -10,10 +10,17 @@ The site is a lightweight static page: **`index.html`** contains the layout, sty
 
 | File | Purpose |
 |------|---------|
-| `index.html` | The complete website. |
-| `og-image.png` | Social-share preview card (shown when the link is posted on LinkedIn, etc.). Keep it in the repo root so `biotecmaven.com/og-image.png` resolves. |
+| `index.html` | The homepage. |
+| `request.html` | The inquiry form. Every offer button links here with its own query string, which preselects that offer. |
+| `privacy.html` | The privacy notice for that form. |
+| `strategic-services.html` | A `noindex` fallback kept for an old link. |
+| `assets/og-cover.png` | Social-share preview card, referenced by `og:image` on all three pages. |
+| `assets/tokens.css` | Shared color, type and spacing tokens. |
+| `assets/art/*.webp` | The ribbon illustrations, drawn from public PDB backbone coordinates. |
+| `assets/vibha-chauhan.jpg` | The founder portrait. |
 | `CNAME` | Tells GitHub Pages to serve the site at `biotecmaven.com`. |
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is (skip Jekyll processing). |
+| `_redirects` | Redirect rules, used only if the site is ever served by Netlify. |
 | `README.md` | This file. |
 
 ---
