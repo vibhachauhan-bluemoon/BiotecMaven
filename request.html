@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Request | BiotecMaven</title>
   <meta name="description" content="Request a defined BiotecMaven review from a public name and a nonconfidential question, or start an advisory conversation with a nonconfidential summary." />
   <meta name="robots" content="noindex" />
@@ -315,9 +316,10 @@ body.solo .req-next[data-mode='advisory']>.fine{margin-top:0}
         </form>
 
         <div class="sent" id="sent" role="status" aria-live="polite">
-          <span class="eyebrow">Received</span>
+          <span class="eyebrow">Sent</span>
           <h2 id="sent-title"></h2>
-          <p>Thank you. Your message reached me through the form service. I will reply to <strong id="sent-email"></strong>. Nothing has been charged.</p>
+          <p>Thank you. Your message was accepted by the form service, and a reply will go to <strong id="sent-email"></strong>. Nothing has been charged.</p>
+          <p class="sent-fallback">If you have not had a reply within two working days, please email <a href="mailto:vibhachauhan@biotecmaven.com">vibhachauhan@biotecmaven.com</a> directly. Very occasionally a message is held by a spam filter, and a second route means nothing is lost.</p>
           <div class="copybox" id="copybox"></div>
           <a class="btn btn-primary" id="sentBack" href="index.html">Back to the site</a>
         </div>
