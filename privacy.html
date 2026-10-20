@@ -150,7 +150,7 @@
 .btn-primary{box-shadow:0 10px 24px -12px rgba(10,107,99,.75)}
 .btn-primary:hover{background:#085a53}
 
-/* ---- navigation matches the homepage: same seven labels, same 1080px break ---- */
+/* ---- navigation matches the homepage: same labels, same 1080px break ---- */
 .nav{gap:18px}
 .nav-links{gap:16px}
 .nav-links a{white-space:nowrap;font-size:.93rem}
@@ -167,40 +167,75 @@
   .nav-cta .btn-outline{display:none}
 }
 @media(max-width:700px){.footer-links{gap:30px}}
+
+/* ---------- header: category dropdowns ---------- */
+.nav-drop{position:relative;display:flex;align-items:center}
+.nav-drop-btn{display:inline-flex;align-items:center;gap:6px;border:0;background:none;padding:0;
+  font:inherit;font-size:.9rem;font-weight:600;color:var(--muted);cursor:pointer;white-space:nowrap}
+.nav-drop-btn:hover,.nav-drop.is-open>.nav-drop-btn{color:var(--navy)}
+.nav-drop-btn:focus-visible{outline:3px solid var(--primary);outline-offset:4px;border-radius:4px}
+.nav-caret{font-size:.68em;line-height:1;transition:transform .15s ease}
+.nav-drop.is-open .nav-caret{transform:rotate(180deg)}
+.nav-drop-menu{display:none;position:absolute;top:calc(100% + 16px);left:-14px;z-index:40;
+  min-width:336px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:15px;
+  box-shadow:var(--shadow)}
+.nav-drop.is-open>.nav-drop-menu{display:block}
+.nav-drop-menu a{display:block;padding:10px 12px;border-radius:10px;text-decoration:none}
+.nav-drop-menu a strong{display:block;font-size:.92rem;font-weight:700;color:var(--primary);letter-spacing:-.01em}
+.nav-drop-menu a span{display:block;margin-top:2px;font-size:.8rem;line-height:1.4;color:var(--muted)}
+.nav-drop-menu a:hover,.nav-drop-menu a:focus-visible{background:var(--ice)}
+.nav-drop-menu a:focus-visible{outline:3px solid var(--primary);outline-offset:-3px}
+@media(hover:hover) and (min-width:1081px){
+  /* a hover bridge, so the pointer can cross the gap to the panel */
+  .nav-drop:after{content:"";position:absolute;left:0;right:0;top:100%;height:18px}
+  .nav-drop:hover>.nav-drop-menu{display:block}
+}
+@media(max-width:1080px){
+  /* inside the burger panel the groups expand in place, not on hover */
+  .nav-drop{display:block;border-bottom:1px solid var(--line)}
+  .nav-drop-btn{width:100%;justify-content:space-between;padding:13px 2px;font-size:1rem}
+  .nav-drop-menu{display:none;position:static;min-width:0;padding:0 0 10px;
+    border:0;border-radius:0;box-shadow:none;background:none}
+  .nav-drop-menu a{padding:9px 0 9px 15px;border-bottom:0}
+  .nav-drop-menu a strong{font-size:.95rem}
+  .nav-drop:after{display:none}
+}
+@media(prefers-reduced-motion:reduce){.nav-caret{transition:none}}
   </style>
 </head>
 <body id="top">
   <header><div class="wrap nav">
     <a class="brand" href="index.html" aria-label="BiotecMaven home"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v3a4 4 0 0 0 8 0V3M8 21v-3a4 4 0 0 1 8 0v3M8 6h8M8 18h8M9.5 9.5h5M9.5 14.5h5"/></svg></span>BiotecMaven</a>
-    <nav class="nav-links" id="navLinks"><a href="index.html#biologics">How I Help</a><a href="index.html#reviews">Maven Reviews</a><a href="index.html#watch">Maven Watch</a><a href="index.html#forge">Maven Forge</a><a href="index.html#second-life">Second Life</a><a href="index.html#expert">About</a><a href="index.html#contact">Contact</a></nav>
-    <div class="nav-cta"><a class="btn btn-outline" data-cta="nav" href="request.html?project=other">Discuss Your Program</a><button class="menu" id="menuBtn" aria-label="Open navigation">☰</button></div>
+    <nav class="nav-links" id="navLinks" aria-label="Main"><a href="index.html#services">Services</a><div class="nav-drop" data-drop="si"><button type="button" class="nav-drop-btn" id="ddb-si" aria-expanded="false" aria-haspopup="true" aria-controls="dd-si">Scientific Intelligence<span class="nav-caret" aria-hidden="true">&#9662;</span></button><div class="nav-drop-menu" id="dd-si" aria-labelledby="ddb-si"><a href="index.html#insight"><strong>Maven Insight</strong><span>Scientific due diligence &amp; investment intelligence</span></a><a href="index.html#reviews"><strong>Maven Reviews</strong><span>Scientific landscape and research reports</span></a><a href="index.html#verify"><strong>Maven Verify</strong><span>Independent scientific claim and report review</span></a><a href="index.html#watch"><strong>Maven Watch</strong><span>Ongoing scientific and competitive monitoring</span></a></div></div><div class="nav-drop" data-drop="bd"><button type="button" class="nav-drop-btn" id="ddb-bd" aria-expanded="false" aria-haspopup="true" aria-controls="dd-bd">Biologics Development<span class="nav-caret" aria-hidden="true">&#9662;</span></button><div class="nav-drop-menu" id="dd-bd" aria-labelledby="ddb-bd"><a href="index.html#design"><strong>Maven Design</strong><span>Biologic design and CRO planning</span></a><a href="index.html#forge"><strong>Maven Forge</strong><span>Mammalian protein expression, CHO cell-line development and early CMC</span></a><a href="index.html#second-life"><strong>Second Life</strong><span>Reassessment of shelved biologics programs</span></a></div></div><a href="index.html#expert">Leadership</a><a href="index.html#contact">Contact</a></nav>
+    <div class="nav-cta"><a class="btn btn-outline" data-cta="nav" href="index.html#contact">Request a Consultation</a><button class="menu" id="menuBtn" aria-label="Open navigation">☰</button></div>
   </div></header>
   <main>
     <section class="req-hero"><div class="wrap">
-      <a class="back" href="request.html">&larr; Back to the request page</a>
+      <a class="back" href="index.html#contact">&larr; Back to BiotecMaven</a>
       <span class="eyebrow">Privacy</span>
       <h1>Privacy notice for the inquiry form</h1>
-      <p>What happens to the information you send through the request page of this website.</p>
+      <p>What happens to the information you send through the inquiry form on this website.</p>
     </div></section>
     <section class="req"><div class="wrap prose">
-      <p class="meta">Last updated: 25 September 2026.</p>
+      <p class="meta">Last updated: 19 October 2026.</p>
 
       <h2>What the form collects</h2>
       <ul>
         <li>Your name and your email address.</li>
-        <li>The offer you picked.</li>
-        <li>Your message, and the confirmation you tick that it is nonconfidential.</li>
+        <li>Your organization, if you choose to add it. The field is optional.</li>
+        <li>The service you select and the timeline you choose, if you set them. Both are optional; with no service selected, the inquiry reaches me as a general inquiry.</li>
+        <li>Your message: the short description of your question or project.</li>
       </ul>
       <p>That is all you type. There is no file upload and no account. The page also has a hidden field that ordinary people never see or fill in; automated spam programs often do, which helps filter them out. The form also sends the result of the security check described below.</p>
 
       <h2>Please send nonconfidential information only</h2>
-      <p>Do not put sequences, unpublished data, internal program names or IDs, or anything covered by an NDA in the form. If we agree to work together, we agree on information sharing and any use of AI tools, and put confidentiality terms in place, before you send project materials. The form&rsquo;s warning about pasted sequences is a reminder, not a filter: it cannot tell what is confidential, so please do not type it.</p>
+      <p>Do not put sequences, unpublished data, internal program names or IDs, or anything covered by an NDA in the form. If we agree to work together, we agree on information sharing and any use of AI tools, and put confidentiality terms in place, before you send project materials. The note beneath the message box is a reminder, not a filter: the form cannot tell what is confidential, so please do not type it.</p>
 
       <h2>How your message travels</h2>
       <p>When you press Send, your browser sends the form to <strong>Formspree</strong> (formspree.io), a third-party form service. Formspree forwards it to my email, <a href="mailto:vibhachauhan@biotecmaven.com">vibhachauhan@biotecmaven.com</a>, and may also keep a copy in my Formspree account. Formspree&rsquo;s handling of that data is described in <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">its privacy policy</a>.</p>
 
       <h2>How I use it</h2>
-      <p>To read your message, reply to you, decide whether and how I can help, and, if we go ahead, agree scope and a fixed price. I do not sell it and I do not use it for advertising.</p>
+      <p>To read your message, reply to you, decide whether and how I can help, and, if we go ahead, agree on scope and a fixed price. I do not sell it and I do not use it for advertising.</p>
 
       <h2>Keeping and deleting your inquiry</h2>
       <p>Your inquiry reaches me by email, and a copy is held in my Formspree account. You can email me at any time to ask that your inquiry be deleted. I can delete it from my email and from my Formspree dashboard.</p>
@@ -218,7 +253,42 @@
       <p>Questions about this notice or your inquiry: <a href="mailto:vibhachauhan@biotecmaven.com">vibhachauhan@biotecmaven.com</a>.</p>
     </div></section>
   </main>
-  <footer><div class="wrap"><div class="footer-top"><div><a class="brand" href="index.html"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v3a4 4 0 0 0 8 0V3M8 21v-3a4 4 0 0 1 8 0v3M8 6h8M8 18h8M9.5 9.5h5M9.5 14.5h5"/></svg></span>BiotecMaven</a></div><div class="footer-links"><div><h4>Explore</h4><a href="index.html#biologics">How I Help</a><a href="index.html#reviews">Maven Reviews</a><a href="index.html#watch">Maven Watch</a><a href="index.html#forge">Maven Forge</a><a href="index.html#second-life">Second Life</a><a href="index.html#expert">About</a><a href="index.html#contact">Contact</a></div><div><h4>Connect</h4><a href="mailto:vibhachauhan@biotecmaven.com">Email</a><a href="https://www.linkedin.com/in/vibhachauhan/" target="_blank" rel="noopener">LinkedIn</a><a href="privacy.html">Privacy</a></div></div></div><div class="footer-bottom"><span>© 2026 BiotecMaven. All rights reserved.</span></div></div></footer>
+  <footer><div class="wrap"><div class="footer-top"><div><a class="brand" href="index.html"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 3v3a4 4 0 0 0 8 0V3M8 21v-3a4 4 0 0 1 8 0v3M8 6h8M8 18h8M9.5 9.5h5M9.5 14.5h5"/></svg></span>BiotecMaven</a></div><div class="footer-links"><div><h4>Explore</h4><a href="index.html#services">Services &amp; Pricing</a><a href="index.html#insight">Maven Insight</a><a href="index.html#intelligence">Scientific Intelligence</a><a href="index.html#development">Biologics Development</a><a href="index.html#expert">Scientific Leadership</a><a href="index.html#contact">Contact</a></div><div><h4>Connect</h4><a href="mailto:vibhachauhan@biotecmaven.com">Email</a><a href="https://www.linkedin.com/in/vibhachauhan/" target="_blank" rel="noopener">LinkedIn</a><a href="privacy.html">Privacy</a></div></div></div><div class="footer-bottom"><span>© 2026 BiotecMaven. All rights reserved.</span></div></div></footer>
   <script>(function(){var b=document.getElementById('menuBtn'),n=document.getElementById('navLinks');b.addEventListener('click',function(){n.classList.toggle('open')});n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open')})});})();</script>
+<script>
+(function(){
+  var drops=[].slice.call(document.querySelectorAll('.nav-drop'));
+  if(!drops.length)return;
+  function shut(d){
+    d.classList.remove('is-open');
+    var b=d.querySelector('.nav-drop-btn');
+    if(b)b.setAttribute('aria-expanded','false');
+  }
+  function shutAll(except){drops.forEach(function(d){if(d!==except)shut(d);});}
+  drops.forEach(function(d){
+    var btn=d.querySelector('.nav-drop-btn');
+    if(!btn)return;
+    // A button, so Enter and Space already activate it. One group open at a time.
+    btn.addEventListener('click',function(){
+      var wasOpen=d.classList.contains('is-open');
+      shutAll(d);
+      if(wasOpen){shut(d);}
+      else{d.classList.add('is-open');btn.setAttribute('aria-expanded','true');}
+    });
+    d.addEventListener('keydown',function(e){
+      if(e.key==='Escape'||e.key==='Esc'){shut(d);btn.focus();}
+    });
+    [].slice.call(d.querySelectorAll('.nav-drop-menu a')).forEach(function(a){
+      a.addEventListener('click',function(){shut(d);});
+    });
+  });
+  document.addEventListener('click',function(e){
+    if(!e.target||!e.target.closest||!e.target.closest('.nav-drop'))shutAll(null);
+  });
+  document.addEventListener('focusin',function(e){
+    if(!e.target||!e.target.closest||!e.target.closest('.nav-drop'))shutAll(null);
+  });
+})();
+</script>
 </body>
 </html>
